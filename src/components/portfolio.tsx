@@ -27,7 +27,7 @@ export default function Portfolio() {
     "Firebase Hosting",
     "Firebase Functions",
     "MongoDB",
-    "Postgres",
+    "PostgreSQL",
     "Mongoose",
     "Sequelize",
     "Prisma ORM",
@@ -53,7 +53,7 @@ export default function Portfolio() {
         "NextJS",
         "Material UI",
         "Next Auth",
-        "Postgres",
+        "PostgreSQL",
         "Prisma",
         "React Hook Form",
         "Tanstack React Query",
@@ -104,7 +104,7 @@ export default function Portfolio() {
                 Full Stack Developer with 9+ years of experience in designing,
                 developing, and deploying scalable SaaS applications. Proficient
                 in multiple technologies, including ReactJS, NextJS, NodeJS,
-                ExpressJS, MongoDB, Postgres, Firebase, Flutter, and Docker.
+                ExpressJS, MongoDB, PostgreSQL, Firebase, Flutter, and Docker.
                 Adept at developing web and mobile applications from concept to
                 deployment. Proven experience in building SaaS platforms such as
                 Google GMB management, personal pages for individuals and

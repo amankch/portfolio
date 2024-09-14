@@ -19,7 +19,47 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Aman",
-  description: "Aman's Portfolio",
+  description: "Full Stack Developer, from system design to development",
+  applicationName: "Aman's Profile",
+  keywords: [
+    "Full Stack Developer",
+    "NextJS",
+    "ReactJS",
+    "NodeJS",
+    "ExpressJS",
+    "Flutter",
+    "Docker",
+    "Firebase",
+    "MongoDB",
+    "PostgreSQL",
+    "Prisma",
+  ],
+  icons: [
+    "/images/apple-touch-icon.png",
+    "/images/android-chrome-192x192.png",
+    "/images/android-chrome-512x512.png",
+  ],
+  openGraph: {
+    title: "Aman",
+    description: "Full Stack Developer, from system design to development",
+    url: "https://www.amankch.in",
+    type: "website",
+    images: [
+      "/images/aman_03.jpeg",
+      "/images/apple-touch-icon.png",
+      "/images/android-chrome-192x192.png",
+      "/images/android-chrome-512x512.png",
+    ],
+
+    // tags: [
+    //   "Full Stack Developer",
+    //   "NextJS",
+    //   "ReactJS",
+    //   "NodeJS",
+    //   "ExpressJS",
+    //   "Flutter",
+    // ],
+  },
 };
 
 export default function RootLayout({
