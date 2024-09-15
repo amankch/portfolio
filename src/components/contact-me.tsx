@@ -137,7 +137,11 @@ function ContactMe() {
                 </p>
               )}
             </div>
-            <Button type="submit" disabled={isSubmitting}>
+            <Button
+              type="submit"
+              disabled={isSubmitting}
+              className="flex items-end"
+            >
               {isSubmitting ? "Sending..." : "Send Message"}
             </Button>
           </form>

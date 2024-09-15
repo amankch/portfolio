@@ -18,9 +18,9 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Aman",
+  title: "Aman's Portfolio",
   description: "Full Stack Developer, from system design to development",
-  applicationName: "Aman's Profile",
+  applicationName: "Aman's portfolio",
   keywords: [
     "Full Stack Developer",
     "NextJS",
@@ -33,6 +33,8 @@ export const metadata: Metadata = {
     "MongoDB",
     "PostgreSQL",
     "Prisma",
+    "Gemini AI API",
+    "Open AI API",
   ],
   icons: [
     "/images/apple-touch-icon.png",
@@ -40,9 +42,9 @@ export const metadata: Metadata = {
     "/images/android-chrome-512x512.png",
   ],
   openGraph: {
-    title: "Aman",
+    title: "Aman's portfolio",
     description: "Full Stack Developer, from system design to development",
-    url: "https://www.amankch.in",
+    url: "https://amankch.in",
     type: "website",
     images: [
       "/images/aman_03.jpeg",

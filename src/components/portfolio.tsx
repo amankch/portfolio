@@ -41,13 +41,17 @@ export default function Portfolio() {
     "Github",
     "Docker",
     "Postman",
+    "Gemini API",
+    "Open AI API",
+    "Digital Ocean",
+    "Caprover",
   ];
 
   const projects = [
     {
       name: "Dottt-Hyperlocal",
       description:
-        "Manage your GMB at one place. System design and development",
+        "Manage your GMB at one place. System design and development. User can import or create their GMB. They can check, generate and download various types of analytics on attached GMB. They can manage various type of campaign, manage reviews, check searched keywords, ranking among others GMB in their geographical area, manage FAQ's, automate reviews reply with the help of AI. Get AI assisted recommendation on the basis of their analytics. Dedicated phone number for their GMB with call recording facilities. SMS and email facilities on various events and to various stakeholders. Used Google's generative AI API, Gemini AI to generate and automate reviews reply.",
       url: "https://manage.dotttme.com",
       tech: [
         "NextJS",
@@ -57,21 +61,22 @@ export default function Portfolio() {
         "Prisma",
         "React Hook Form",
         "Tanstack React Query",
+        "Gemini API",
         "Docker",
       ],
     },
     {
       name: "ChatApp Store",
       description:
-        "Personalize page for Business and Individual where they can share their Digital Card, Manage their appointments and other things",
+        "Personalize page for Business and Individual where they can share their Digital Card, Manage their appointments and other things. Individual or business can register themselves and manage their information, like what they want to share with world and how. They can setup and manage their appointment system and setup their small e-commerce booking setup.",
       url: "https://chatapp.store",
       tech: ["NodeJS", "ExpressJS", "EJS", "Javascript", "Bot UI", "Docker"],
     },
     {
-      name: "Newsum News APP",
+      name: "Newsum News App",
       description:
-        "User will get positive news over this platform. Created UI and functionalities for fetching the displaying the news in the app. User can register and bookmark the news.",
-      tech: ["Cordova", "Flutter", "REST API", ""],
+        "User will get positive news over this platform. Created UI and functionalities for fetching the displaying the news in the app. User can register and bookmark the news. Use can view news in different categories. User can search news on the basis of entered keyword. User can share the news over various messaging and social media apps.",
+      tech: ["Cordova", "Flutter", "REST API", "Wordpress"],
     },
     {
       name: "Scanner App",
@@ -82,7 +87,7 @@ export default function Portfolio() {
     {
       name: "After Market App for Minda",
       description:
-        "User can view and order the two wheeler parts via the After Market App. Also user can check and view the nearest Minda dealer and get the direction over Google Map in the app.",
+        "User can view and check the availability and price of the two wheeler parts via the After Market App. Also user can check and view the nearest Minda dealer and get the direction over Google Map in the app.",
       tech: ["Cordova", "PHP", "MySQL"],
     },
   ];
