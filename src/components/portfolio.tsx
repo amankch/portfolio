@@ -9,8 +9,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ThemeToggle } from "@/components/theme-toggle";
-import ContactMe from "@/components/contact-me";
+
 import {
   // ClipboardList,
   Mail,
@@ -19,6 +18,9 @@ import {
   Terminal,
   User,
 } from "lucide-react";
+
+import ContactMe from "@/components/contact-me";
+import BlogPage from "@/components/blog";
 // import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 export default function Portfolio() {
@@ -104,59 +106,59 @@ export default function Portfolio() {
   return (
     <div className="min-h-screen bg-background text-foreground py-2 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <div className="flex justify-end mb-4">
-          <ThemeToggle />
-        </div>
-        <header className="mb-12">
-          <div className="flex flex-col md:flex-row items-center md:items-start gap-8 justify-between">
-            <div className="flex flex-col justify-center text-center md:text-left md:flex-1">
-              <li className="flex items-center">
-                <User size={22} />
-                <h1 className="text-4xl font-bold mb-2 mx-1">
-                  Aman Kumar Choudhary
-                </h1>
-              </li>
-              <li className="flex items-center">
-                <Terminal size={18} />
-                <p className="text-xl text-muted-foreground mb-2 mx-1">
-                  Full Stack Developer
-                </p>
-              </li>
-              <li className="flex items-center">
-                <Mail size={16} />
-                <Link
-                  href="mailTo:amankch@gmail.com"
-                  className="text-sm text-muted-foreground my-1 mx-1"
-                >
-                  amankch@gmail.com
-                </Link>
-              </li>
-              <li className="flex items-center">
-                <Phone size={16} />
-                <Link
-                  href="tel:+919999004538"
-                  className="text-sm text-muted-foreground my-1 mx-1"
-                >
-                  +919999004538
-                </Link>
-              </li>
-              <li className="flex items-center">
-                {/* <ClipboardList size={16} /> */}
-                <Scroll size={32} />
-                <p className="text-sm my-1 mx-1">
-                  Full Stack Developer with 9+ years of experience in designing,
-                  developing, and deploying scalable SaaS applications.
-                  Proficient in multiple technologies, including ReactJS,
-                  NextJS, NodeJS, ExpressJS, MongoDB, PostgreSQL, Firebase,
-                  Flutter, and Docker. Adept at developing web and mobile
-                  applications from concept to deployment. Proven experience in
-                  building SaaS platforms such as Google GMB management,
-                  personal pages for individuals and businesses, and news
-                  applications in Flutter.
-                </p>
-              </li>
-            </div>
-            {/* <div className="text-center md:text-left md:flex-1">
+        {/* <header className="mb-12"></header> */}
+
+        <div
+          id="about"
+          className="flex flex-col md:flex-row items-center md:items-start gap-8 justify-between mb-12"
+        >
+          <div className="flex flex-col justify-center text-center md:text-left md:flex-1">
+            <li className="flex items-center">
+              <User size={22} />
+              <h1 className="text-4xl font-bold mb-2 mx-1">
+                Aman Kumar Choudhary
+              </h1>
+            </li>
+            <li className="flex items-center">
+              <Terminal size={18} />
+              <p className="text-xl text-muted-foreground mb-2 mx-1">
+                Full Stack Developer
+              </p>
+            </li>
+            <li className="flex items-center">
+              <Mail size={16} />
+              <Link
+                href="mailTo:amankch@gmail.com"
+                className="text-sm text-muted-foreground my-1 mx-1"
+              >
+                amankch@gmail.com
+              </Link>
+            </li>
+            <li className="flex items-center">
+              <Phone size={16} />
+              <Link
+                href="tel:+919999004538"
+                className="text-sm text-muted-foreground my-1 mx-1"
+              >
+                +919999004538
+              </Link>
+            </li>
+            <li className="flex items-center">
+              {/* <ClipboardList size={16} /> */}
+              <Scroll size={32} />
+              <p className="text-sm my-1 mx-1">
+                Full Stack Developer with 9+ years of experience in designing,
+                developing, and deploying scalable SaaS applications. Proficient
+                in multiple technologies, including ReactJS, NextJS, NodeJS,
+                ExpressJS, MongoDB, PostgreSQL, Firebase, Flutter, and Docker.
+                Adept at developing web and mobile applications from concept to
+                deployment. Proven experience in building SaaS platforms such as
+                Google GMB management, personal pages for individuals and
+                businesses, and news applications in Flutter.
+              </p>
+            </li>
+          </div>
+          {/* <div className="text-center md:text-left md:flex-1">
               <h1 className="text-4xl font-bold mb-2">Aman Kumar Choudhary</h1>
               <p className="text-xl text-muted-foreground">
                 Full Stack Developer
@@ -185,19 +187,18 @@ export default function Portfolio() {
                 businesses, and news applications in Flutter.
               </p>
             </div> */}
-            <div className="w-full md:w-1/3 aspect-[4/3] overflow-hidden rounded-lg">
-              <Image
-                src="/images/aman_03.jpeg?height=300&width=400"
-                alt="Aman Kumar Choudhary"
-                height={350}
-                width={400}
-                className="w-full h-full object-cover"
-              />
-            </div>
+          <div className="w-full md:w-1/3 aspect-[4/3] overflow-hidden rounded-lg">
+            <Image
+              src="/images/aman_03.jpeg?height=300&width=400"
+              alt="Aman Kumar Choudhary"
+              height={350}
+              width={400}
+              className="w-full h-full object-cover"
+            />
           </div>
-        </header>
+        </div>
 
-        <section className="mb-12">
+        <section id="skills" className="mb-12">
           <h2 className="text-2xl font-semibold mb-4">Skills</h2>
           <div className="flex flex-wrap gap-2">
             {skills.map((skill, index) => (
@@ -208,7 +209,7 @@ export default function Portfolio() {
           </div>
         </section>
 
-        <section className="mb-12">
+        <section id="project" className="mb-12">
           <h2 className="text-2xl font-semibold mb-4">Projects</h2>
           <div className="grid gap-6 md:grid-cols-2">
             {projects.map((project, index) => (
@@ -245,6 +246,11 @@ export default function Portfolio() {
               </Card>
             ))}
           </div>
+        </section>
+
+        <section id="blogs" className="mb-12">
+          <h2 className="text-2xl font-semibold mb-4">Blogs</h2>
+          <BlogPage />
         </section>
 
         <ContactMe />

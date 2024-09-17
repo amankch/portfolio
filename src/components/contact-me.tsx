@@ -67,7 +67,7 @@ function ContactMe() {
   };
 
   return (
-    <section className="mb-12">
+    <section id="contact" className="mb-12">
       <h2 className="text-2xl font-semibold mb-4">Contact Me</h2>
       <Card>
         <CardHeader>
